@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ebc9bdacfa.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+     <!-- GoogleFonts  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,600;0,700;1,700&display=swap"
+         rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="startGame">
+            <div class="game_logo">
+                <img src="img/icon.png">
+                <h2>Gra Kółko Krzyżyk</h2>
+            </div>
+            <div class="gameMode">
+                <div id="computer" class="box">
+                    <img src="img/computer.png" >
+                    <p>Komputer</p>
+                </div>
+                <div id='players' class="box">
+                    <img src="img/players.png" >
+                    <p>Gracz vs Gracz</p>
+                </div>
+                <p class="gameMode-error"></p>
+            </div>
+            <button id="getPlayersBtn">Rozpocznij Grę!</button>
+        </div>
+
+        <div class="gameScore"></div>
+
+        <div class="board">
+            <div id="c1" class="column">
+                <div id="space-1">
+                    <p class="click_btn"></p>
+                </div>
+                <div id="space-2">
+                    <p class="click_btn"></p>
+                </div>
+                <div id="space-3">
+                    <p class="click_btn"></p>
+                </div>
+            </div>
+            <div id="c2" class="column">
+                <div id="space-4">
+                    <p class="click_btn"></p>
+                </div>
+                <div id="space-5">
+                    <p class="click_btn"></p>
+                </div>
+                <div id="space-6">
+                    <p class="click_btn"></p>
+                </div>
+            </div>
+            <div id="c3" class="column">
+                <div id="space-7">
+                    <p class="click_btn"></p>
+                </div>
+                <div id="space-8">
+                    <p class="click_btn"></p>
+                </div>
+                <div id="space-9">
+                    <p class="click_btn"></p>
+                </div>
+            </div>
+            <div class="board-menu">
+                <button class="backBtn">Powrót do Menu</button>
+                <button class="restartBtn">Rozpocznij od nowa</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="gameOver-popup">
+        <h2>Koniec Gry</h2>
+        <p class="popup-text">Zwyciężczył: <span class="winner"></span></p>
+        <div class="board-menu">
+            <button class="backBtn">Powrót do Menu</button>
+            <button class="restartBtn">Rozpocznij od nowa</button>
+        </div>
+    </div>
+    <div class="shadow"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--🙂-->
